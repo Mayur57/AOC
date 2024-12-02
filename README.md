@@ -3,8 +3,11 @@
 Advent of Code solutions repository. Here, you'll find my attempts at solving the puzzles.
 
 ### Days Completed
-- 2023: **9/25**
-- 2024: **2/25**
+
+- **2015**: 1/25
+- **2022**: 2/25
+- **2023**: 10/25
+- **2024**: 2/25
 
 Make sure you have at the very least attempted the puzzles beforehand if not already submitted the answers. I appreciate and encourage anyone who's looking to improving their own solutions by comparing approaches or researching about tricks. However, there is a fine line between researching ideas and using the answer by someone else. If you photocopy a crossword solution then what have you really achieved?
 
