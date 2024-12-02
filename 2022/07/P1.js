@@ -61,9 +61,9 @@ function findAndSumSmallDirs(node, maxSize) {
 }
 
 function main(str) {
-    const filesystem = parseFilesystem(str)
-    calculateSizes(filesystem)
-    return findAndSumSmallDirs(filesystem, 100000)
+  const filesystem = parseFilesystem(str)
+  calculateSizes(filesystem)
+  return findAndSumSmallDirs(filesystem, 100000)
 }
 
 console.log(main(example))
