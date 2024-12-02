@@ -10,8 +10,11 @@ function main(str) {
     const cals = b.split('\n')
     blockCals.push(cals.reduce((acc, c) => acc + Number(c), 0))
   })
-  blockCals.sort((a, b) => b - a)
-  return blockCals.slice(0, 3).reduce((acc, c) => acc + c, 0)
+
+  return blockCals
+    .sort((a, b) => b - a)
+    .slice(0, 3)
+    .reduce((acc, c) => acc + c, 0)
 }
 
 console.log(main(example))
