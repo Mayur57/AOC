@@ -21,4 +21,4 @@ function main(str) {
 }
 
 console.log(main(example), 48)
-console.log(main(input), 107862689)
+console.log(main(input))
