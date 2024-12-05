@@ -4,7 +4,7 @@ Advent of Code solutions repository. Here, you'll find my attempts at solving th
 
 ### Days Completed
 
-- **2015**: 1/25
+- **2015**: 2/25
 - **2022**: 2/25
 - **2023**: 10/25
 - **2024**: 5/25
