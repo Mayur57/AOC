@@ -60,7 +60,7 @@ function main(str) {
         return true
       }
       visited.add(state)
-    //   console.log(visited)
+      //   console.log(visited)
     }
   }
 
