@@ -6,14 +6,14 @@ const input = fs.readFileSync('./in.dat', { encoding: 'utf8' }).trim()
 function main(str) {
   const grid = str.split('\n').map(line => line.trim())
   const directions = [
-    [-1, 0],     // N
-    [-1, 1],     // NE
-    [0, 1],      // E
-    [1, 1],      // SE
-    [1, 0],      // S
-    [1, -1],     // SW
-    [0, -1],     // W
-    [-1, -1],    // NW
+    [-1, 0], // N
+    [-1, 1], // NE
+    [0, 1], // E
+    [1, 1], // SE
+    [1, 0], // S
+    [1, -1], // SW
+    [0, -1], // W
+    [-1, -1], // NW
   ]
   const word = 'XMAS'
   let count = 0
