@@ -1,7 +1,7 @@
 const fs = require('fs')
 
-const example = fs.readFileSync('./eg.dat', { encoding: 'utf8' }).trim()
-const input = fs.readFileSync('./in.dat', { encoding: 'utf8' }).trim()
+const example = fs.readFileSync('eg.dat', { encoding: 'utf8' }).trim()
+const input = fs.readFileSync('in.dat', { encoding: 'utf8' }).trim()
 
 function main(str) {
   let result = 0
