@@ -24,14 +24,11 @@ function main(str) {
 
   const antinodes = new Set()
 
-  for (const [freq, locations] of antennas) {
+  for (const [_, locations] of antennas) {
     for (let i = 0; i < locations.length; i++) {
       for (let j = i + 1; j < locations.length; j++) {
         const a1 = locations[i]
         const a2 = locations[j]
-
-        const dx = a2.x - a1.x
-        const dy = a2.y - a1.y
 
         for (let y = 0; y < height; y++) {
           for (let x = 0; x < width; x++) {
