@@ -3,7 +3,6 @@ const fs = require('fs')
 const example = fs.readFileSync('eg.dat', { encoding: 'utf8' }).trim()
 const input = fs.readFileSync('in.dat', { encoding: 'utf8' }).trim()
 
-// Helper function to check if a point is within map bounds
 function isValid(point, width, height) {
   return point.x >= 0 && point.x < width && point.y >= 0 && point.y < height
 }
