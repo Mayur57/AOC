@@ -39,7 +39,6 @@ function main(str) {
     return trailCount
   }
 
-
   let totalRating = 0
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
