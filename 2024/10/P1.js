@@ -3,7 +3,7 @@ const fs = require('fs')
 const example = fs.readFileSync('eg.dat', { encoding: 'utf8' }).trim()
 const input = fs.readFileSync('in.dat', { encoding: 'utf8' }).trim()
 
-function calculateTrailheadScores(str) {
+function main(str) {
   const map = str
     .split('\n')
     .filter(line => line.trim() !== '')
@@ -62,5 +62,5 @@ function calculateTrailheadScores(str) {
   return totalScore
 }
 
-console.log(calculateTrailheadScores(example))
-console.log(calculateTrailheadScores(input))
+console.log(main(example))
+console.log(main(input))

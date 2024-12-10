@@ -3,7 +3,7 @@ const fs = require('fs')
 const example = fs.readFileSync('eg.dat', { encoding: 'utf8' }).trim()
 const input = fs.readFileSync('in.dat', { encoding: 'utf8' }).trim()
 
-function calculateTrailheadRatings(str) {
+function main(str) {
   const map = str
     .split('\n')
     .filter(line => line.trim() !== '')
@@ -11,10 +11,8 @@ function calculateTrailheadRatings(str) {
   const rows = map.length
   const cols = map[0].length
 
-  // Helper to determine if a position is within bounds and valid
   const isValid = (x, y) => x >= 0 && x < rows && y >= 0 && y < cols
 
-  // Directions for moving up, down, left, or right
   const directions = [
     [-1, 0],
     [1, 0],
@@ -22,7 +20,6 @@ function calculateTrailheadRatings(str) {
     [0, 1],
   ]
 
-  // Recursive function to count all distinct trails from a given position
   const countTrails = (x, y, height, visited) => {
     if (map[x][y] !== height) return 0
     if (height === 9) return 1
@@ -38,11 +35,11 @@ function calculateTrailheadRatings(str) {
       }
     }
 
-    visited[x][y] = false // Backtrack
+    visited[x][y] = false
     return trailCount
   }
 
-  // Find all trailheads (positions with height 0)
+
   let totalRating = 0
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j < cols; j++) {
@@ -56,5 +53,5 @@ function calculateTrailheadRatings(str) {
   return totalRating
 }
 
-console.log(calculateTrailheadRatings(example))
-console.log(calculateTrailheadRatings(input))
+console.log(main(example))
+console.log(main(input))
