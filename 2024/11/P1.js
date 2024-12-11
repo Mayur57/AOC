@@ -5,7 +5,7 @@ const input = fs.readFileSync('./in.dat', { encoding: 'utf8' }).trim()
 
 function main(str) {
   let stones = str.split(' ')
-  for (let i = 0; i < 75; i++) {
+  for (let i = 0; i < 25; i++) {
     let newStones = []
     for (let j = 0; j < stones.length; j++) {
       if (Number(stones[j]) === 0) {
