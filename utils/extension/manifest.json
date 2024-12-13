@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Advent of Code Prettifier",
+    "version": "1.0.0",
+    "description": "Inject custom CSS to make Advent of Code website more readable.",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["*://*/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://adventofcode.com/*"],
+        "css": ["custom.css"]
+      }
+    ],
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+  }
+  
