@@ -123,7 +123,7 @@ function main(str) {
 
     if (components <= CONNECTED_COMPONENT_LIMIT) {
       console.log(time)
-      console.log(grid.map(row => row.join('')).join('\n')) // Uncomment to see the frames
+      // console.log(grid.map(row => row.join('')).join('\n')) // Uncomment to see the frames
     }
   }
 }
