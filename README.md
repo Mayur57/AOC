@@ -19,4 +19,4 @@ Also, just a heads up, there's an evident lack of code craftsmanship here. My so
 
 
 ## Contribution
-Please feel free to dig into the solutions and fix any edge cases! I'll do a cleanup before New Years to archive this repository (and probably add C++ solution). Thank you!
+Please feel free to dig into the solutions and fix any edge cases! I'll do a cleanup before New Years to archive this repository (and probably C++ solutions? Go?! Who knows.). Thank you!
