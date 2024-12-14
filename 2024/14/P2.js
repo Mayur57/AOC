@@ -62,9 +62,9 @@ function transformRobots(robotSpecs, time) {
 }
 
 function makeFrame(pos, gh, gw) {
-  let grid = Array.from({ length: gh }, () => Array(gw).fill('.'))
+  let grid = Array.from({ length: gh }, () => Array(gw).fill(' '))
   for (const { x, y } of pos) {
-    grid[y][x] = '*'
+    grid[y][x] = '█'
   }
   return grid
 }
@@ -81,7 +81,7 @@ function countComponents(grid, width, height) {
 
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
-      if (grid[y][x] === '*' && !seen.has(`${x},${y}`)) {
+      if (grid[y][x] === '█' && !seen.has(`${x},${y}`)) {
         componentCount++
         const queue = [[x, y]]
 
@@ -96,7 +96,7 @@ function countComponents(grid, width, height) {
             const nx = cx + dx
             const ny = cy + dy
 
-            if (nx >= 0 && nx < width && ny >= 0 && ny < height && grid[ny][nx] === '*') {
+            if (nx >= 0 && nx < width && ny >= 0 && ny < height && grid[ny][nx] === '█') {
               queue.push([nx, ny])
             }
           })
