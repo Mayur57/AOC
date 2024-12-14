@@ -10,7 +10,7 @@ This is the progress for days that have both the parts solved and uploaded on th
 |2015| ![AOC 2015 Progress](https://progress-bar.xyz/8/?title=2%2F25%20)|
 |2022| ![AOC 2022 Progress](https://progress-bar.xyz/8/?title=2%2F25%20)|
 |2023| ![AOC 2023 Progress](https://progress-bar.xyz/40/?title=10%2F25%20)|
-|2024| ![AOC 2024 Progress](https://progress-bar.xyz/52/?title=13%2F25%20)|
+|2024| ![AOC 2024 Progress](https://progress-bar.xyz/56/?title=14%2F25%20)|
 
 ### Few Reminders
 Make sure you have at the very least attempted the puzzles beforehand if not already submitted the answers. I appreciate and encourage anyone who's looking to improving their own solutions by comparing approaches or researching about tricks. However, there is a fine line between researching ideas and using the answer by someone else. If you photocopy a crossword solution then what have you really achieved?
