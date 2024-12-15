@@ -59,6 +59,5 @@ function main(str) {
   return quadrantRobot(str.split('\n').map(line => transformRobots(extractVectors(line))))
 }
 
-// TODO: A good todo might be to make this compatible with all grid sizes.
 console.log(main(example)) // Wrong answer for example due to hard coded values. However, works for input
 console.log(main(input))
