@@ -41,42 +41,41 @@ function main(str) {
 
   let out = ''
   for (let i = 0; i < program.length; i += 2) {
-    let opr = program[i + 1]
-
+    let operand = program[i + 1]
     switch (program[i]) {
       case 0:
-        ra = Math.trunc(ra / Math.pow(2, combo(opr)))
+        ra >>= combo(operand)
         break
 
       case 1:
-        rb = rb ^ opr
+        rb ^= operand
         break
 
       case 2:
-        rb = combo(opr) % 8
+        rb = combo(operand) % 8
         break
 
       case 3:
-        if (ra !== 0 && opr < program.length) {
-          i = opr - 2
+        if (ra !== 0 && operand < program.length) {
+          i = operand - 2
           continue
         }
         break
 
       case 4:
-        rb = rb ^ rc
+        rb ^= rc
         break
 
       case 5:
-        out += (combo(opr) % 8) + ','
+        out += (combo(operand) % 8) + ','
         break
 
       case 6:
-        rb = Math.trunc(ra / Math.pow(2, combo(opr)))
+        rb = ra >> combo(operand)
         break
 
       case 7:
-        rc = Math.trunc(ra / Math.pow(2, combo(opr)))
+        rc = ra >> combo(operand)
         break
 
       default:
@@ -88,5 +87,5 @@ function main(str) {
   return out.slice(0, -1)
 }
 
-console.log(main(example),  (main(example) === '4,6,3,5,6,3,5,2,1,0' ? "CORRECT" : "ERROR"))
+console.log(main(example), main(example) === '4,6,3,5,6,3,5,2,1,0' ? 'CORRECT' : 'ERROR')
 console.log(main(input))
