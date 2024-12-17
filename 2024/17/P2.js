@@ -47,6 +47,9 @@ for all 2^3 = 8 guesses and shortlist every value (ra * 8 + guess) and check for
 the next power of 8 using that possible seed value. Guess is the wrong word since
 this isn't a probabilistic solution but I think you get the point.
 
+Since recursive values might get big, consider increasing heap memory using:
+`node --max-old-space-size=4096 P2.js`
+
 */
 
 function runProgram(a, b, c) {
