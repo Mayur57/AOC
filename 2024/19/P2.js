@@ -12,7 +12,7 @@ function processInput(raw) {
 
 function waysToDesign(string, designs) {
   const dp = Array(string.length + 1).fill(0)
-  dp[0] = 1 // empty string -> constructible
+  dp[0] = 1 // empty string is always constructible
 
   for (let i = 1; i <= string.length; i++) {
     for (const d of designs) {
