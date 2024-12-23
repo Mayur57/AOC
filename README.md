@@ -10,7 +10,7 @@ This is the progress for days that have both the parts solved and uploaded on th
 |2015| ![AOC 2015 Progress](https://progress-bar.xyz/8/?title=2%2F25%20)|
 |2022| ![AOC 2022 Progress](https://progress-bar.xyz/8/?title=2%2F25%20)|
 |2023| ![AOC 2023 Progress](https://progress-bar.xyz/40/?title=10%2F25%20)|
-|2024| ![AOC 2024 Progress](https://progress-bar.xyz/88/?title=22%2F25%20)|
+|2024| ![AOC 2024 Progress](https://progress-bar.xyz/92/?title=23%2F25%20)|
 
 ### Automation Script
 You can use the `prepare.js` file to make folders, load template, and fetch input automatically for any of the days. Run it using `node prepare.js YYYY-DD`.
