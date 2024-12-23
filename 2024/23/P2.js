@@ -61,5 +61,5 @@ function main(str) {
   return result
 }
 
-console.log(main(example), "co,de,ka,ta")
+console.log(main(example), 'co,de,ka,ta')
 console.log(main(input))
