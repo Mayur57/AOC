@@ -1,1 +1,0 @@
-console.log("\n\nNOOB ALEART!!!\n\nI don't know how to code for this puzzle.\nI referred to Reddit and Youtube discussions and did it by hand to get the star :/\n\n")
