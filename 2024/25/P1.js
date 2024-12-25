@@ -56,4 +56,4 @@ function main(str) {
 
 console.log(main(example))
 console.log(main(input))
-console.log("\nThank you, Day 25 has only one part so Advent of Code 2024 ends here. Goodbye!!!\n")
+console.log('\nThank you, Day 25 has only one part so Advent of Code 2024 ends here. Goodbye!!!\n')
